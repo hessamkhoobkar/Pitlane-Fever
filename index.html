@@ -1,10 +1,28 @@
 <!doctype html>
-<html lang="en">
-  <head class="dark">
+<html class="dark" lang="en">
+  <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + React + TS</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Pitlane Fever</title>
+
+    <!-- 
+      This style was added to prevent a flickering/flashing white background before the first render. 
+      The downside is that it needs to be updated manually with the changes of color pallet in the tailwind.  
+    -->
+    <style type="text/css">
+      html.dark {
+        background-color: hsl(222.2 84% 4.9%);
+      }
+    </style>
   </head>
   <body>
     <div id="root"></div>

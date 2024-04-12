@@ -11,7 +11,9 @@ import ConstructorsPage from "@/pages/standings/Constructors";
 
 // TODO
 
-// appwrite
+// add supbase
+// Auth setup
+//
 
 function App() {
   return (

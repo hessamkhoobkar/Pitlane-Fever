@@ -1,9 +1,23 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
+
+import { supabase } from "@/lib/supabase";
+
 import { Button } from "@/components/ui/button";
 import { ModeToggle } from "@/components/mode-toggle";
 
 function IndexPage() {
   const [count, setCount] = useState(0);
+  const [countries, setCountries] = useState([]);
+
+  useEffect(() => {
+    getCountries();
+    console.log("called");
+  }, []);
+
+  async function getCountries() {
+    const { data } = await supabase.from("countries").select();
+    setCountries(data);
+  }
 
   return (
     <>
@@ -13,6 +27,12 @@ function IndexPage() {
       </Button>
 
       <ModeToggle />
+
+      <ul>
+        {countries.map((country) => (
+          <li key={country.name}>{country.name}</li>
+        ))}
+      </ul>
     </>
   );
 }

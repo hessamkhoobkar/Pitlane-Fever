@@ -3,7 +3,6 @@ import { useEffect, useState } from "react";
 import { supabase } from "@/lib/supabase";
 
 import { Button } from "@/components/ui/button";
-import { ModeToggle } from "@/components/mode-toggle";
 
 function IndexPage() {
   const [count, setCount] = useState(0);
@@ -25,8 +24,6 @@ function IndexPage() {
       <Button onClick={() => setCount((count) => count + 1)}>
         Click me {count}
       </Button>
-
-      <ModeToggle />
 
       <ul>
         {countries.map((country) => (

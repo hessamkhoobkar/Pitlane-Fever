@@ -11,9 +11,20 @@ import ConstructorsPage from "@/pages/standings/Constructors";
 
 // TODO
 
-// add supbase
 // Auth setup
-//
+// Setup pages
+// - Home Page
+// - App Layout
+// - users
+// - ! user _self
+// - user/posts
+// - user/posts/:id
+// - user/bookmarks/
+// - user/likes/
+// - clubs
+// - Standings
+// -
+// - Auth pages
 
 function App() {
   return (

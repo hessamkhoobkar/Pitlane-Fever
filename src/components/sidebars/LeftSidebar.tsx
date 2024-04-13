@@ -1,12 +1,17 @@
-import { Link } from "react-router-dom";
+import { navData } from "@/lib/constants/navigation";
+import NavigationItem from "./NavigationItem";
 
 export default function LeftSidebar() {
   return (
-    <div className="bg-platform min-h-full grow">
-      <div className="flex flex-col">
-        <Link to="/">home</Link>
-        <Link to="/standings/drivers">Drivers standings</Link>
-        <Link to="/standings/constructors">Constructors standingse</Link>
+    <div className="min-h-full grow bg-platform">
+      <div id="sidebar-nav" className="flex flex-col gap-1 pe-4 pt-4">
+        {navData.map((navitem) => (
+          <NavigationItem
+            label={navitem.label}
+            href={navitem.href}
+            icon={navitem.icon}
+          />
+        ))}
       </div>
     </div>
   );

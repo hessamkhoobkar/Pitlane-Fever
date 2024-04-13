@@ -62,6 +62,18 @@
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 210 40% 98%;
 
+    --asphalt-50: #cacadd;
+    --asphalt-100: #c5c5d3;
+    --asphalt-200: #ababc4;
+    --asphalt-300: #898ca9;
+    --asphalt-400: #616589;
+    --asphalt-500: #4a4c64;
+    --asphalt-600: #36374a;
+    --asphalt-700: #262736;
+    --asphalt-800: #1b1b23;
+    --asphalt-900: #15151e;
+    --asphalt-950: #121217;
+
     --border: 217.2 32.6% 17.5%;
     --input: 217.2 32.6% 17.5%;
     --ring: 212.7 26.8% 83.9%;

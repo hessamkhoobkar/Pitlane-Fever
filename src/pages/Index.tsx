@@ -10,7 +10,6 @@ function IndexPage() {
 
   useEffect(() => {
     getCountries();
-    console.log("called");
   }, []);
 
   async function getCountries() {

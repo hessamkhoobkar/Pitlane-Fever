@@ -23,7 +23,7 @@ export default function NavigationItem({
       }
     >
       <span className="text-2xl">{icon}</span>
-      <span>{label}</span>
+      <span className="hidden xl:block">{label}</span>
     </NavLink>
   );
 }

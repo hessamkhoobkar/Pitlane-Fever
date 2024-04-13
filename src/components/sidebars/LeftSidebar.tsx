@@ -7,6 +7,7 @@ export default function LeftSidebar() {
       <div id="sidebar-nav" className="hidden flex-col gap-1 pe-4 pt-4 lg:flex">
         {navData.map((navitem) => (
           <NavigationItem
+            key={navitem.href}
             label={navitem.label}
             href={navitem.href}
             icon={navitem.icon}

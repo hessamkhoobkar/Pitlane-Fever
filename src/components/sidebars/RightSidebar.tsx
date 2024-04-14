@@ -2,8 +2,6 @@ import { useQuery } from "@tanstack/react-query";
 
 import Standings from "./Standings";
 
-// fetch failed
-// standing link animation
 // responsive design
 
 export default function RightSidebar() {
@@ -22,7 +20,7 @@ export default function RightSidebar() {
   });
 
   return (
-    <div className="min-h-full w-full max-w-sm">
+    <div className="me-4 hidden min-h-full w-full max-w-sm lg:block">
       <img src="./imgs/pitlane-logo.png" alt="" />
       <Standings data={data} status={status} />
     </div>
